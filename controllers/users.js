@@ -16,7 +16,8 @@ const usersController = {
     },
     create: (req, res) => {
         User.create({
-            email: req.body.email
+            name: req.body.name,
+            image: req.body.image
         }).then((user) => {
             res.redirect(`/users/${users.id}`)
         })

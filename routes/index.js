@@ -13,7 +13,7 @@ router.get('/', applicationController.index)
 router.get('/users', usersController.index)
 router.get('/users/new', usersController.new)
 router.get('/stores/:id', usersController.show)
-router.get('stores', usersController.create)
+router.get('/users', usersController.create)
 
 // goods page
 

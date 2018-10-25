@@ -5,11 +5,11 @@ const User = new Schema({
     name: String,
     image: String,
     goods: [{
-        type: Schema.type.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Good'
     }],
     bads: [{
-        type: Schema.type.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Bad'
     }]
 })
