@@ -1,0 +1,9 @@
+<h1>Hello from Users page</h1>
+
+{{#each us}}
+    <div>
+    <h1>{{name}}</h1>
+    <a href="/users/{{_id}}"><img src={{image}} /></a>
+    {{description}}
+    </div>
+{{/each}}

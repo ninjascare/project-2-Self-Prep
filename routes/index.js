@@ -10,22 +10,25 @@ const badsController = require('../controllers/bads')
 router.get('/', applicationController.index)
 
 // users page
+router.get('/users', usersController.index)
 router.get('/users/new', usersController.new)
 router.post('/users', usersController.create)
-router.get('/users/:id', usersController.show)
+router.get('/users/:usersId', usersController.show)
 
 // goods page
-router.get('/goods/new', goodsController.new)
-router.post('/goods', goodsController.create)
-router.get('/goods/:id', goodsController.show)
-router.patch('/goods/:id', goodsController.update)
+router.get('/users/:usersId/goods', goodsController.index)
+router.get('/users/:usersId/goods/new', goodsController.new)
+router.post('/users/:usersId/goods', goodsController.create)
+router.get('/users/:usersId/goods/:goodsId', goodsController.show)
+router.patch('/users/:usersId/goods/:id', goodsController.update)
 
 
 // bads page
-router.get('/bads/new', badsController.new)
-router.post('/bads', badsController.create)
-router.get('/bads/:id', badsController.show)
-router.patch('/badss/:id', badsController.update)
+router.get('/users/:usersId/bads', badsController.index)
+router.get('/users/:usersId/bads/new', badsController.new)
+router.post('/users/:usersId/bads', badsController.create)
+router.get('/users/:usersId/bads/:badsId', badsController.show)
+router.patch('/users/:usersId/bads/:badsId', badsController.update)
 
 
 

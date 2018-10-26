@@ -4,7 +4,14 @@ const Bad = require('../models/Bad')
 
 const applicationController = {
     index: (req, res) => {
-       res.render('application/index')
+        
+        User.find({})
+        .then((Users)=>{
+            res.render('application/index', {
+                Users: Users
+            })
+            
+        })
     }
 }
 
