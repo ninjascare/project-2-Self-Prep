@@ -10,10 +10,9 @@ const badsController = require('../controllers/bads')
 router.get('/', applicationController.index)
 
 // users page
-router.get('/users', usersController.index)
 router.get('/users/new', usersController.new)
-router.get('/stores/:id', usersController.show)
 router.get('/users', usersController.create)
+router.get('/users/:id', usersController.show)
 
 // goods page
 
