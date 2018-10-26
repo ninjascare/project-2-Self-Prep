@@ -20,7 +20,7 @@ const badsController = {
         })
     },
     show: (req, res) => {
-        Bad.findById(req.params.Id).populate('name').then((bd) => {
+        Bad.findById(req.params.Id).populate(`name`).then((bd) => {
             res.render('bad/show', {
                bd: bd
             })

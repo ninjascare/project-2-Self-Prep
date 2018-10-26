@@ -4,10 +4,10 @@ const Bad = require('../models/Bad')
 
 const goodsController = {
     index: (req, res) => {
-        const usersId = req.params.usersId
-        User.findById(usersId).populate('User.goods').then((ur) => {
-            const goods = ur.goods
-            res.send(goods)
+        User.find({}).populate(`goods`).then((ur) => {
+            res.render(`good/index`, {
+                ur: ur
+            })
         })
     },
     new: (req, res) => {
@@ -20,7 +20,7 @@ const goodsController = {
         })
     },
     show: (req, res) => {
-        Good.findById(req.params.id).populate('name').then((gd) => {
+        Good.findById(req.params.id).populate(`name`).then((gd) => {
             res.render('good/show', {
                 gd: gd
             })

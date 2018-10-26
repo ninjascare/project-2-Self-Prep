@@ -20,7 +20,7 @@ router.get('/users/:usersId/goods', goodsController.index)
 router.get('/users/:usersId/goods/new', goodsController.new)
 router.post('/users/:usersId/goods', goodsController.create)
 router.get('/users/:usersId/goods/:goodsId', goodsController.show)
-router.patch('/users/:usersId/goods/:id', goodsController.update)
+router.patch('/users/:usersId/goods/goodsId', goodsController.update)
 
 
 // bads page
