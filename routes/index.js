@@ -23,7 +23,7 @@ router.patch('/goods/:id', goodsController.update)
 
 // bads page
 router.get('/bads/new', badsController.new)
-router.post('/goods', badsController.create)
+router.post('/bads', badsController.create)
 router.get('/bads/:id', badsController.show)
 router.patch('/badss/:id', badsController.update)
 
