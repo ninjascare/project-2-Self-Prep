@@ -11,14 +11,22 @@ router.get('/', applicationController.index)
 
 // users page
 router.get('/users/new', usersController.new)
-router.get('/users', usersController.create)
+router.post('/users', usersController.create)
 router.get('/users/:id', usersController.show)
 
 // goods page
-
+router.get('/goods/new', goodsController.new)
+router.post('/goods', goodsController.create)
+router.get('/goods/:id', goodsController.show)
+router.patch('/goods/:id', goodsController.update)
 
 
 // bads page
+router.get('/bads/new', badsController.new)
+router.post('/goods', badsController.create)
+router.get('/bads/:id', badsController.show)
+router.patch('/badss/:id', badsController.update)
+
 
 
 

@@ -60,7 +60,9 @@ const michelle = new User({
     bads: [gta]
 })
 
-User.remove({})
+User.remove({}) 
+    .then(() => Good.remove({}))
+    .then(() => Bad.remove({}))
     .then(() => Good.insertMany([walkedGranny, trashPickUp, bookUp]))
     .then(() => Bad.insertMany([shots, robbery, gta]))
     .then(() => mark.save())
