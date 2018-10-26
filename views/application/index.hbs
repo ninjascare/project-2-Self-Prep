@@ -1,11 +1,8 @@
 {{#each Users}}
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{image}}" >
-    <div class="card-body">
-        <p class="card-text">{{description}}</p>
-        <button href='' class='btn btn-success'>Good</button>
-        <button href='' class='btn btn-danger'>Bad</button>
-
+<div class="card border-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">If this is your user then click button</div>
+    <div class="card-body text-info">
+       <button href='' class='btn btn-primary'>{{name}}</button>
     </div>
 </div>
 

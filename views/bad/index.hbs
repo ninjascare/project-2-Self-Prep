@@ -1,12 +1,13 @@
-{{!-- {{#each ue}}
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{image}}">
-    <div class="card-body">
-        <p class="card-text">{{description}}</p>
-        <button href='' class='btn btn-danger'>Bad</button>
-    </div>
+{{!-- <h1>Welcome to your bads: <br></br>You sinner!!</h1> --}}
+{{#each ue}}
+<div class="card">
+  <div class="card-header">
+{{name}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
-
-{{/each}} --}}
-
-<h1>hey from bad index</h1>
+{{/each}}
