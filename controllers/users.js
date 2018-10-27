@@ -15,7 +15,7 @@ const usersController = {
         res.render('user/new')
     },
     show: (req, res) => {
-        User.findById(req.params.id).then((use) => {
+        User.findById(req.params.usersId).populate(`goods`, `bads`).then((use) => {
             res.render('user/show', {
                 use: use
             })
@@ -27,7 +27,7 @@ const usersController = {
             image: req.body.image,
             description: req.body.description
         }).then((ser) => {
-            res.redirect(`/ser/${users.id}`)
+            res.redirect(`/ser/${ser._id}`)
         })
     }
 }

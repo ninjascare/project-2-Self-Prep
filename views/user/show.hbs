@@ -1,1 +1,12 @@
-<h1>hello from user show</h1>
+<h1>Hello from Users page: </h1>
+
+{{#each use}}
+<div>
+    <h1>{{name}}</h1> <br>
+    <img src='{{image}}' />
+</div>
+{{/each}}
+ <a href='/users/{{use._id}}/goods/{{_id}}'><button class="btn btn-success">Good</button></a>
+ <a href='/users/{{use._id}}/bads/{{_id}}'><button class="btn btn-danger">Bad</button></a>
+
+
