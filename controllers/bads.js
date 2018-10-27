@@ -4,9 +4,9 @@ const Bad = require('../models/Bad')
 
 const badsController = {
     index: (req, res) => {
-        User.findById(req.params.usersId).populate(`bads`).then((ue) => {
+        User.findById(req.params.usersId).populate(`bads`).then((ur) => {
             res.render('bad/index', {
-                ue: ue
+                ur: ur
             })
         })
     },
@@ -21,7 +21,7 @@ const badsController = {
     show: (req, res) => {
         Bad.findById(req.params.Id).populate(`name`).then((bd) => {
             res.render('bad/show', {
-               bd: bd
+                bd: bd
             })
         })
     },

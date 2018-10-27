@@ -1,11 +1,11 @@
 {{!-- <h1>Welcome to your bads: <br></br>You sinner!!</h1> --}}
-{{#each ue.bads}}
+{{#each ur.bads}}
 <div class="card">
   <div class="card-header">
 {{name}}
   </div>
   <div class="card-body">
-    <a href="#" class="btn btn-primary">Click for more details</a>
+    <a href="/users/{{ur.id}}/bads/{{_id}}" class="btn btn-primary">Click for more details</a>
   </div>
 </div>
 {{/each}}
