@@ -24,10 +24,9 @@ const usersController = {
     create: (req, res) => {
         User.create({
             name: req.body.name,
-            image: req.body.image,
-            description: req.body.description
+            image: req.body.image
         }).then((ser) => {
-            res.redirect(`/ser/${ser._id}`)
+            res.redirect(`/users/${ser._id}`)
         })
     }
 }
