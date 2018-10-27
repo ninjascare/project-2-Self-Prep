@@ -1,13 +1,11 @@
 {{!-- <h1>Welcome to your bads: <br></br>You sinner!!</h1> --}}
-{{#each ue}}
+{{#each ue.bads}}
 <div class="card">
   <div class="card-header">
 {{name}}
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">{{description}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Click for more details</a>
   </div>
 </div>
 {{/each}}

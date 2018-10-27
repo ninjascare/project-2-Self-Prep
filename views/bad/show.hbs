@@ -1,7 +1,13 @@
-<main>
-<h1>Welco</h1>
-
-
-
-
-</main>
+{{#each }}
+<div class="card">
+  <div class="card-header">
+{{name}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <img src='{{image}}'
+  </div>
+</div>
+{{/each}}

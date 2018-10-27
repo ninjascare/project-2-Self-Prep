@@ -4,7 +4,7 @@ const Bad = require('../models/Bad')
 
 const badsController = {
     index: (req, res) => {
-        Bad.find({}).then((ue) => {
+        User.findById(req.params.usersId).populate(`bads`).then((ue) => {
             res.render('bad/index', {
                 ue: ue
             })
