@@ -1,1 +1,12 @@
-nhgf
+{{#each gd}}
+<div class="card">
+  <div class="card-header">
+{{gd.name}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{gd.name}}</h5>
+    <p class="card-text">{{gd.description}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{{/each}}

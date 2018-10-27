@@ -4,7 +4,7 @@ const Bad = require('../models/Bad')
 
 const badsController = {
     index: (req, res) => {
-        User.find({}).populate(`bads`).then((ue) => {
+        Bad.find({}).then((ue) => {
             res.render('bad/index', {
                 ue: ue
             })
@@ -12,7 +12,6 @@ const badsController = {
     },
     new: (req, res) => {
         res.render('bad/new')
-        res.send('Hello from bads new')
     },
     create: (req, res) => {
         Bad.create(req.body).then((savedBad) => {

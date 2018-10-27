@@ -4,7 +4,7 @@ const Bad = require('../models/Bad')
 
 const usersController = {
     index: (req, res) => {
-        User.find({}).populate('goods', 'bads')
+        User.find({})
             .then((us) => {
                 res.render('user/index', {
                     us: us
