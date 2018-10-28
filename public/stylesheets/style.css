@@ -1,25 +1,43 @@
 body {
+    background: black;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     align-content: center;
     flex-direction: column;
     text-align: center;
+
 }
-.row{
+
+.row {
     text-align: center;
     display: flex;
     justify-content: center;
     align-content: center;
 
 }
+
 .btn {
     display: inline;
     padding: 34px;
     margin: 10px;
 }
-img{
+
+img {
     position: relative;
+}
+
+#slide {
+    height: 100vh;
+    width: 50vw;
+}
+
+#scoreBoard {
+    text-align: center;
+    border: solid;
+    margin: 10px;
+    padding: 12px;
+    
 }
