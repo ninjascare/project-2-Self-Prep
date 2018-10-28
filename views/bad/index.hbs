@@ -1,11 +1,19 @@
-{{!-- <h1>Welcome to your bads: <br></br>You sinner!!</h1> --}}
+<h1>Welcome to your bads: <br></br>You sinner!!</h1>
 {{#each ur.bads}}
 <div class="card">
   <div class="card-header">
 {{name}}
   </div>
+  <img src="{{image}}" alt="shooting someone">
   <div class="card-body">
-    <a href="/users/{{ur.id}}/bads/{{_id}}" class="btn btn-primary">Click for more details</a>
+    {{description}}
   </div>
 </div>
 {{/each}}
+
+<div class="card border-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">Add new bad</div>
+    <div class="card-body text-info">
+       <a href='/users/{{ur._id}}/bads/new/{{_id}}'><button class='btn btn-primary'>create new bad</button></a>
+    </div>
+</div>

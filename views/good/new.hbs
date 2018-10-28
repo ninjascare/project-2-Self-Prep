@@ -1,5 +1,5 @@
 <section class="row">
-  <h4>Create User:</h4>
+  <h4>Create Good:</h4>
 
   <form action="/users" method="POST" >
     <p class="input-field">
@@ -8,8 +8,11 @@
     <p class="input-field">
       <input type="src" name="image" placeholder="Image">
     </p>
+       <p class="input-field">
+      <input type="name" name="description" placeholder="Description">
+    </p>
     <p class="input-field">
-     <button href='/users/{{_id}}/goods/{{_id}}' class='btn btn-primary'>Sign Up</button>
+     <button href='/users/{{_id}}/goods/{{_id}}' class='btn btn-primary'>Generate New Good</button>
     </p>
   </form>
 </section>

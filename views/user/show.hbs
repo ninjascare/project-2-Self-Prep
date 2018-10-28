@@ -9,4 +9,8 @@
  <a href='/users/{{use._id}}/goods/{{gd._id}}'><button class="btn btn-success">Good</button></a>
  <a href='/users/{{use._id}}/bads/{{bd._id}}'><button class="btn btn-danger">Bad</button></a>
 
+ <a href="/users/{{use._id}}/edit">EDIT</a>
 
+    <form action="/users/{{use._id}}?_method=DELETE" method="POST">
+      <button type="submit">DELETE THIS USER</button>
+    </form>

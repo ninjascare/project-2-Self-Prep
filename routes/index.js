@@ -14,6 +14,9 @@ router.get('/users', usersController.index)
 router.get('/users/new', usersController.new)
 router.post('/users', usersController.create)
 router.get('/users/:usersId', usersController.show)
+router.get('/users/:usersId/edit', usersController.edit)
+router.patch('/users/:usersId', usersController.update)
+router.delete('/users/:usersId', usersController.delete)
 
 // goods page
 router.get('/users/:usersId/goods', goodsController.index)

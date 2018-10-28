@@ -28,6 +28,24 @@ const usersController = {
         }).then((ser) => {
             res.redirect(`/users/${ser._id}`)
         })
+    },
+    edit: (req, res) => {
+        User.findById(req.params.usersId).then((uu) => {
+            res.render('user/edit', {
+                uu: uu
+            })
+        })
+    },
+    update: (req, res) => {
+        User.findByIdAndUpdate(req.params.usersId).then((updatedUser) => {
+            res.redirect(`/users/${updatedUser._id}`)
+        })
+    },
+    delete: (req, res) => {
+        User.findByIdAndRemove(req.params.usersId).then(() => {
+            res.redirect('/users')
+        })
+
     }
 }
 

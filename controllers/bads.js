@@ -13,16 +13,21 @@ const badsController = {
     new: (req, res) => {
         res.render('bad/new')
     },
-    create: (req, res) => {
-        Bad.create(req.body).then((savedBad) => {
-            res.send(savedBad)
-        })
-    },
     show: (req, res) => {
-        Bad.findById(req.params.Id).populate(`name`).then((bd) => {
+        Bad.findById(req.params.badsId).populate('name').then((bd) => {
             res.render('bad/show', {
                 bd: bd
             })
+         
+        })
+    },
+    create: (req, res) => {
+        Bad.create({
+            name: req.body.name,
+            image: req.body.image,
+            description: req.body.description
+        }).then((ba) => {
+            res.redirect(`/users/:id/bads/${ba._id}`)
         })
     },
     update: (req, res) => {
