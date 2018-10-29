@@ -11,13 +11,21 @@ const goodsController = {
         })
     },
     new: (req, res) => {
-        res.render('good/new')
+        const usersId = req.params.usersId
+        res.render('good/new', {
+            id: usersId
+        })
 
     },
     create: (req, res) => {
-        Good.create(req.body).then((savedGood) => {
-            res.send(savedGood)
+    const usersId = req.params.usersId
+    User.findById(usersId).then((user)=>{
+        Good.create(req.body).then((createdGood)=>{
+            user.goods.push(createdGood)
+            user.save()
+            res.redirect(`/users/${usersId}/goods`)
         })
+    })
     },
     show: (req, res) => {
         User.findById(req.params.id).populate(`goods`).then((gd) => {

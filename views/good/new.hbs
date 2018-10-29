@@ -1,7 +1,7 @@
 <section class="row">
   <h4>Create Good:</h4>
 
-  <form action="/users/:usersId/goods/:goodsId" method="POST">
+  <form action="/users/{{id}}/goods" method="POST">
     <p class="input-field">
       <input type="name" name="name" placeholder="Name">
     </p>
@@ -12,7 +12,7 @@
       <input type="name" name="description" placeholder="Description">
     </p>
     <p class="input-field">
-     <a href='/users/:usersId/goods/{{gd._id}}'><button id='newGood' class='btn btn-primary'>Generate New Good</button></a>
+      <button type='submit' id='newGood' class='btn btn-primary'>Generate New Good</button>
     </p>
   </form>
 </section>

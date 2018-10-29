@@ -11,24 +11,29 @@ const badsController = {
         })
     },
     new: (req, res) => {
-        res.render('bad/new')
+        const userId = req.params.usersId
+        res.render('bad/new', {
+            id: userId
+        })
     },
     show: (req, res) => {
         Bad.findById(req.params.badsId).populate('name').then((bd) => {
             res.render('bad/show', {
                 bd: bd
             })
-         
+
         })
     },
     create: (req, res) => {
-        Bad.create({
-            name: req.body.name,
-            image: req.body.image,
-            description: req.body.description
-        }).then((ba) => {
-            res.redirect(`/users/:id/bads/${ba._id}`)
-        })
+        const userId = req.params.usersId
+        User.findById(userId)
+            .then((user) => {
+                Bad.create(req.body).then((createdBad) => {
+                    user.bads.push(createdBad)
+                    user.save()
+                    res.redirect(`/users/${userId}/bads`)
+                })
+            })
     },
     update: (req, res) => {
         res.send('hello from bads update')
