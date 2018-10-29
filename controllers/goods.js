@@ -7,6 +7,7 @@ const goodsController = {
         User.findById(req.params.usersId).populate(`goods`).then((ur) => {
             res.render(`good/index`, {
                 ur: ur
+
             })
         })
     },
