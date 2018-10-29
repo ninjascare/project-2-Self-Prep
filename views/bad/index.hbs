@@ -2,9 +2,9 @@
 {{#each ur.bads}}
 <div class="card">
   <div class="card-header">
-{{name}}
+    {{name}}
   </div>
-  <img src="{{image}}" alt="shooting someone">
+  <img class='bads' src="{{image}}">
   <div class="card-body">
     {{description}}
   </div>
@@ -12,8 +12,8 @@
 {{/each}}
 
 <div class="card border-info mb-3" style="max-width: 18rem;">
-    <div class="card-header">Add new bad</div>
-    <div class="card-body text-info">
-       <a href='/users/{{ur._id}}/bads/new/{{_id}}'><button class='btn btn-primary'>create new bad</button></a>
-    </div>
+  <div class="card-header">Add new bad</div>
+  <div class="card-body text-info">
+    <a href='/users/{{ur._id}}/bads/new/{{_id}}'><button class='btn btn-primary'>create new bad</button></a>
+  </div>
 </div>

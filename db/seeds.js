@@ -29,14 +29,14 @@ const shots = new Bad({
 
 const robbery = new Bad({
     name: 'I just commited a robbery',
-    iamge: 'https://media.giphy.com/media/mW8RpVI5mjGYE/giphy.gif',
+    image: 'https://media.giphy.com/media/mSiLFn81Gjdi8/giphy.gif',
     description: 'I just robbed a bank'
 })
 
 const gta = new Bad({
-    name: 'I just stole a car part',
-    image: 'https://media.giphy.com/media/mW8RpVI5mjGYE/giphy.gif',
-    description: "I just stole a wheel off of someone's car"
+    name: 'I just stole a car ',
+    image: 'https://media.giphy.com/media/3oEduGzkdvam26MrXG/giphy.gif',
+    description: "I just stole someone's car from them"
 })
 
 const mark = new User({
