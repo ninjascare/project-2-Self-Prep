@@ -1,18 +1,18 @@
 <section class="row">
   <h4>Create Good:</h4>
 
-  <form action="/users" method="POST" >
+  <form action="/users/:usersId/goods/:goodsId" method="POST">
     <p class="input-field">
       <input type="name" name="name" placeholder="Name">
     </p>
     <p class="input-field">
       <input type="src" name="image" placeholder="Image">
     </p>
-       <p class="input-field">
+    <p class="input-field">
       <input type="name" name="description" placeholder="Description">
     </p>
     <p class="input-field">
-     <button href='/users/{{_id}}/goods/{{_id}}' class='btn btn-primary'>Generate New Good</button>
+     <a href='/users/:usersId/goods/{{gd._id}}'><button id='newGood' class='btn btn-primary'>Generate New Good</button></a>
     </p>
   </form>
 </section>

@@ -1,19 +1,19 @@
 <section class="row">
   <h4>Create Bad:</h4>
 
-  <form action="/users/:id/bads/:badsId" method="POST" >
+  <form action="/users/:id/bads/:badsId" method="POST">
     <p class="input-field">
       <input type="name" name="name" placeholder="Name">
     </p>
     <p class="input-field">
       <input type="src" name="image" placeholder="Image">
     </p>
-      <p class="input-field">
+    <p class="input-field">
       <input type="name" name="description" placeholder="Description">
     </p>
-    
+
     <p class="input-field">
-     <a href='/users/{{use._id}}/bads/{{ba._id}}'><button  class='btn btn-primary'>Sign Up</button></a>
+      <a href='/users/{{use._id}}/bads/{{ba._id}}'><button id='newBad' class='btn btn-primary'>Sign Up</button></a>
     </p>
   </form>
 </section>
