@@ -1,16 +1,18 @@
+<h1>Please find your User below</h1><br><br>
 {{#each us}}
-<div class="card border-info mb-3" style="max-width: 18rem;">
-    <div class="card-header">If this is your user then click button</div>
-    <div class="card-body text-info">
-       <a href='/users/{{_id}}'><button class='btn btn-primary'>{{name}}</button></a>
+<div id='card'>
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">If this is your user then click button</div>
+        <div class="card-body text-info">
+            <a href='/users/{{_id}}'><button class='btn btn-primary'>{{name}}</button></a>
+        </div>
     </div>
 </div>
-
 {{/each}}
 
 <div class="card border-info mb-3" style="max-width: 18rem;">
     <div class="card-header">If you're new, then click here</div>
     <div class="card-body text-info">
-       <a href='/users/new'><button class='btn btn-primary'>create new user</button></a>
+        <a href='/users/new'><button class='btn btn-primary'>create new user</button></a>
     </div>
 </div>

@@ -1,10 +1,10 @@
 <main>
 
-	<h2>EDIT THIS User!</h2>
+  <h2>EDIT THIS User!</h2>
 
-	
 
-	<div id="edit-form" class="uu">
+
+  <div id="edit-form" class="uu">
 
     <form action="/users/{{uu._id}}?_method=PATCH" method="POST">
       <div>
@@ -16,6 +16,8 @@
         <label for="image">img: </label>
         <input type="text" name='image' value="{{uu.image}}">
       </div>
-     <a href='/users/{{uu._id}}'><button class='btn btn-primary' type="submit">Update User</button></a>
+      <a href='/users/{{uu._id}}'><button class='btn btn-primary' type="submit">Update User</button></a>
     </form>
+    <a href="/users/{{uu._id}}"><button type="submit">Go back</button></a>
+
 </main>

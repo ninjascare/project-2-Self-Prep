@@ -1,17 +1,21 @@
 {{#each ur.goods}}
 <div class="card">
   <div class="card-header">
-{{name}}
+    {{name}}
   </div>
   <div class="card-body">
- <img src="{{image}}" alt="granny walking">
+    <img src="{{image}}" alt="granny walking">
     <p class="card-text">{{description}}</p>
   </div>
 </div>
 {{/each}}
+
+
 <div class="card border-info mb-3" style="max-width: 18rem;">
-    <div class="card-header">Add new good</div>
-    <div class="card-body text-info">
-       <a href='/users/{{ur._id}}/goods/new/{{id}}'><button class='btn btn-primary'>create new good</button></a>
-    </div>
+  <div class="card-header">Add new good</div>
+  <div class="card-body text-info">
+    <a href='/users/{{ur._id}}/goods/new/{{id}}'><button class='btn btn-primary'>create new good</button></a>
+  </div>
 </div>
+
+<a href="/users/{{ur._id}}"><button class='btn btn-warning' type="submit">Go back</button></a>
