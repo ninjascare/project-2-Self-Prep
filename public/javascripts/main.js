@@ -1,7 +1,7 @@
 let newGood = document.querySelector('#newGood')
 let newBad = document.querySelector('#newBad')
 let scoreboard = document.querySelector('#scoreBoard')
-let points = 0
+let points = 1000
 
 newGood.addEventListener('click', function () {
     points += 10
