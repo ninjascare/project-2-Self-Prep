@@ -19,4 +19,4 @@ For Project 2, I created an app where individual families can go and try to make
 
 ## WireFrame:
 1. **ERDs** - 
-![alt text]('/public/images/Screen Shot 2018-10-31 at 12.26.36 AM.png')
+![alt text](./public/images/Screen Shot 2018-10-31 at 12.26.36 AM.png)
