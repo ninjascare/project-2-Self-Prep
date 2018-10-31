@@ -1,6 +1,6 @@
 body {
-    background: black;
     background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    background-color: #000024;
     margin: 0 auto;
     padding: 0 auto;
     display: flex;
@@ -40,10 +40,12 @@ img {
 }
 
 #nameTitle {
+    background: url('https://art.pixilart.com/71406ad5064e4f0.gif');
     text-align: center;
     border: solid;
     margin: 10px;
     padding: 12px;
+    font-weight: 900px;
 
 }
 
@@ -64,4 +66,8 @@ img {
 .intro {
     border: solid black;
     display: flex;
+}
+
+.btn:hover {
+    background: url('http://24.media.tumblr.com/06588ca9ba3acb9deddbd785fafecac3/tumblr_mketv8Zcq11s267u8o1_500.gif');
 }
