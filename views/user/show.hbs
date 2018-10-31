@@ -1,4 +1,4 @@
-<h1>Welcome back to your User's Page: </h1>
+<h1 clss='userI'>Welcome back to your User's Page: </h1>
 <br><br>
 {{#each use}}
 <div>
@@ -13,9 +13,9 @@
 <a href='/users/{{use._id}}/bads/{{bd._id}}'><button class="btn btn-danger">Bad</button></a>
 
 <a href="/users/{{use._id}}/edit"><button class='btn btn-warning'>EDIT</button></a>
-
+<div id='delete'>
 <form action="/users/{{use._id}}?_method=DELETE" method="POST">
   <button type="submit">DELETE THIS USER</button>
 </form>
-
+</div>
 <a href="/users"><button class='btn btn-primary' type="submit">Go back</button></a>

@@ -41,6 +41,8 @@ img {
 
 #nameTitle {
     background: url('https://art.pixilart.com/71406ad5064e4f0.gif');
+    font-family: 'Ceviche One', cursive;
+    font-size: 5em;
     text-align: center;
     border: solid;
     margin: 10px;
@@ -70,4 +72,18 @@ img {
 
 .btn:hover {
     background: url('http://24.media.tumblr.com/06588ca9ba3acb9deddbd785fafecac3/tumblr_mketv8Zcq11s267u8o1_500.gif');
+}
+
+.goodIn {
+    font-family: 'Tangerine', cursive;
+    font-size: 5em;
+}
+
+.badIn {
+    font-family: 'Charmonman', cursive;
+    font-size: 3em;
+}
+
+.userI {
+    font-family: 'Covered By Your Grace', cursive;
 }
