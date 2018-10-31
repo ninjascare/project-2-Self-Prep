@@ -1,6 +1,6 @@
 # project-2
 
-#Overview:
+# Overview:
 
 For Project 2, I created an app where individual families can go and try to make themsleves better people as a unit. This app will allow them to add any good deeds they've done or even any bad deeds. This app is to help families self reflect what they look like as a team and people.
 
