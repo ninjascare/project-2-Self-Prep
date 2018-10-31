@@ -7,7 +7,6 @@ For Project 2, I created an app where individual families can go and try to make
 **Live Site:** [Heroku Deplyed App](https://damp-anchorage-55469.herokuapp.com/)
 
 ## Technologies Used:
-
 1. **Languages** - _HTML5, CSS3, Javascript, Node.js, Express.js, MongoDb, Mongoose_
 
 2.**Design** - _BootStrap_
@@ -25,7 +24,7 @@ For Project 2, I created an app where individual families can go and try to make
 ![alt text](./public/images/Screen Shot 2018-10-31 at 12.26.36 AM.png?raw=true)
 
 
-##Future Development:
+## Future Development:
 
 1. Be able to add points: 10 points for good deeds but remove 100 points for bad deeds
 
