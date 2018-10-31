@@ -17,11 +17,12 @@ For Project 2, I created an app where individual families can go and try to make
 
 
 ## WireFrame:
-
+![Wireframe](./public/images/wireframe.jpg)
 
 ## ERDs:
 
-![ERD](Screen Shot 2018-10-31 at 12.26.36 AM.png)
+![ERD](./public/images/erd.png)
+
 
 
 ## Future Development:
