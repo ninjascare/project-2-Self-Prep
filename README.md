@@ -18,5 +18,15 @@ For Project 2, I created an app where individual families can go and try to make
 
 
 ## WireFrame:
-1. **ERDs** - 
-![alt text](./public/images/Screen Shot 2018-10-31 at 12.26.36 AM.png)
+
+
+## ERDs:
+
+![alt text](./public/images/Screen Shot 2018-10-31 at 12.26.36 AM.png?raw=true)
+
+
+##Future Development:
+
+1. Be able to add points: 10 points for good deeds but remove 100 points for bad deeds
+
+2. Whenever you enter a bad deed a dare should be accompanied it, and if they dont do the dare with prove then they lose double the points 
